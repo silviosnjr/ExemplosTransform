@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #f4f4f4; */
+}
+
+.moeda-container {
+    perspective: 1000px; /* Adiciona profundidade para o efeito 3D */
+}
+
+.moeda {
+    width: 150px;
+    height: 150px;
+    transition: transform 1s ease-in-out; /* Controla o tempo e suavidade da animação */
+    transform-style: preserve-3d; /* Mantém o efeito 3D durante a rotação */
+
+}
+
+.moeda:hover {
+    transform: rotateY(1800deg); /* Faz a moeda girar várias vezes ao clicar */
+}
